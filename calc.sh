@@ -3,7 +3,7 @@
 
 
 
-# If the selection matches a supported operation, execute the operation.
+
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
 
@@ -22,4 +22,17 @@ echo "Exit"
 
 # Then, capture the user selection.
 read selection
+
+# If the selection matches a supported operation, execute the operation.
+case $selection in
+  "Add")
+    echo "User has selected 'Add'"
+    ;;
+  "Subtract")
+    echo "User has selected 'Subtract'"
+    ;;
+  "Exit")
+    echo "User has selected 'Exit'"
+    ;;
+esac
 
