@@ -4,7 +4,7 @@
 
 
 
-# If the selection does not match a support operation, display an error message.
+
 # When the operation is complete, redisplay the menu.
 
 # When the program is first loaded, display a greeting to the user.
@@ -33,6 +33,11 @@ case $selection in
     ;;
   "Exit")
     echo "User has selected 'Exit'"
+    ;;
+  # If the selection does not match a support operation, display an error message.
+  *)
+    echo "Unsupported Operation: $selection"
+    echo "Please Try Again"
     ;;
 esac
 
