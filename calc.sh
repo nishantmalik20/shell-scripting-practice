@@ -6,6 +6,8 @@ while true; do
 # Then, display a menu that outlines the possible operations:
   # Add
   # Subtract
+  #Divide
+  #Multiply
   # Exit
 
 echo "Make a Selection:"
