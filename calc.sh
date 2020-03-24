@@ -26,7 +26,12 @@ read selection
 # If the selection matches a supported operation, execute the operation.
 case $selection in
   "Add")
-    echo "User has selected 'Add'"
+    echo "Please enter the first number:"
+    read first_number
+    echo "Please enter the second number:"
+    read second_number
+    echo "The sum of $first_number and $second_number is:"
+    expr $first_number + $second_number
     ;;
   "Subtract")
     echo "User has selected 'Subtract'"
